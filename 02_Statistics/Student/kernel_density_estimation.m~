@@ -1,0 +1,17 @@
+% Data
+randn('seed',1)                            % Used for reproducibility
+data = [randn(100,1)-10; randn(100,1)+10]; % Two Normals mixed
+% True
+phi = @(x) exp(-.5*x.^2)/sqrt(2*pi);       % Normal Density
+tpdf = @(x) phi(x+10)/2+phi(x-10)/2;       % True Density
+% Kernel
+h = std(data)*(4/3/numel(data))^(1/5);     % Bandwidth estimated by Silverman's Rule of Thumb
+kernel = @(x) mean(phi((x-data)/h)/h);     % Kernel Density
+kpdf = @(x) arrayfun(kernel,x);            % Elementwise application
+% Plot
+figure(2), clf, hold on
+%x = linspace(-25,+25,1000);                % Linear Space
+x = linspace(-5,+5,100);  
+plot(x,tpdf(x))                            % Plot True Density
+plot(x,kpdf(x))                            % Plot Kernel Density with Silverman's Rule of Thumb
+kde(data) 
