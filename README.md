@@ -8,11 +8,11 @@ The following repository provides students with material for the DSP course at t
 - [x] Fourier and Inverse Fourier Transform
 - [x] Complex Fourier Transform
 - [x] Fast Fourier Transform
-- [ ] Z-Transform, Pole and Zero Placement
-- [ ] IIR Filters - Zero Pole Placement Method
-- [ ] IIR Filter - Chevyshev and Butterworth Filters
-- [ ] FIR Filter - Moving Average
-- [ ] FIR Filter - Windowed Sinc Filters
+- [x] Z-Transform, Pole and Zero Placement
+- [x] IIR Filters - Zero Pole Placement Method
+- [x] IIR Filter - Chevyshev and Butterworth Filters
+- [x] FIR Filter - Moving Average
+- [x] FIR Filter - Windowed Sinc Filters
 - [ ] Multirate Sampling
 - [ ] Filter Banks
 
