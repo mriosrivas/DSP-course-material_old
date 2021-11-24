@@ -1,5 +1,5 @@
-# DSP_Student_2021
-The following repository provides students with material for the DSP course at the Landivar University, the course teaches the following topics:
+# DSP-course-material
+The following repository provides students with material for the DSP course taught at the Landivar University. The following materials are presented:
 
 - [x] Statistics
 - [x] Signal Decompositions
@@ -17,11 +17,9 @@ The following repository provides students with material for the DSP course at t
 - [ ] Filter Banks
 
 
-
-It is recommended that you install Anaconda for easily managing your environment variables.
+It is recommended that you install Anaconda for managing your environment variables.
 
 Requirements:
-
 - NumPy
 - SciPy
 - Matplotlib
